@@ -32,4 +32,30 @@
 // null === undefined false
 
 
+const a=10
+const obj={
+  a:13,
+  b:()=>{
+    console.log(this.a);//undefined
+  },
+  c:function(){
+    console.log(this.a);//13
+  },
+  d:function(){
+    return ()=>{
+      console.log(this.a);//13
+    }
+  },
+  e:function(){
+    return this.b//undefined
+  }
+}
+
+obj.b()
+obj.c()
+obj.d()()
+obj.e()()
+
+
+
 
