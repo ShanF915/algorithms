@@ -137,3 +137,24 @@ console.log(unique2(brr));
 // Array.from
 // Array.protptype.slice.call()
 
+const slarr=[1,2,3,4,5,6];
+const sl1=slarr.slice();
+const sl2=slarr.slice(1);
+const sl3=slarr.slice(3,5);
+console.log(sl1);
+console.log(sl2);
+console.log(sl3);
+
+const num=123;
+const str=num.toString();
+const numarr=str.split('');
+console.log(str,numarr);
+
+let num1=123;
+const numarr1=[]
+while(num1){
+  numarr1.unshift(num1%10);
+  num1=parseInt(num1/10);
+}
+console.log(numarr1);
+console.log(numarr1.join());
