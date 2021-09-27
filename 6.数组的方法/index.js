@@ -158,3 +158,28 @@ while(num1){
 }
 console.log(numarr1);
 console.log(numarr1.join());
+
+
+
+const arrarr=[1,2,3]
+let numnum=0;
+for(let i=0;i<arrarr.length-1;i++)
+{
+  numnum=numnum*10+arrarr[i];
+}
+console.log(num);
+
+
+// let nummun=[2,11,7,15];
+// let target=9;
+// // console.log(nummun.slice(1));
+// // let index=nummun.slice(1).findIndex(item=>item+2===target)
+// // console.log(index+1);
+// for(let i=0;i<nummun.length;i++){
+//   let index=nummun.slice(i).findIndex(item=>item+arr[i]===target)
+//   console.log(i);
+//   if(index!==-1){
+//      console.log(i,index+i);
+//   }
+
+// }
